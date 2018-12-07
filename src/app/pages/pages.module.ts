@@ -21,6 +21,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         Graficas1Component,
         IncrementadorComponent,
         GraficoDonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [
         DashboardComponent,
