@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
 import { SettingsService, SharedService, SidebarService, UsuarioService, LoginGuardGuard, SubirArchivoService } from './service.index';
+import { ModelUploadService } from '../components/model-upload/model-upload.service';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { SettingsService, SharedService, SidebarService, UsuarioService, LoginGu
     SidebarService,
     UsuarioService,
     LoginGuardGuard,
-    SubirArchivoService
+    SubirArchivoService,
+    ModelUploadService
   ],
   declarations: []
 })

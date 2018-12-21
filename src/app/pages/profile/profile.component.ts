@@ -29,7 +29,7 @@ export class ProfileComponent implements OnInit {
             this.usuario.email = usuario.email;
         }
 
-        this._usuarioService.actualizarUusario(this.usuario)
+        this._usuarioService.actualizarUsuario(this.usuario)
             .subscribe( resp => {
                 console.log(resp);
             });

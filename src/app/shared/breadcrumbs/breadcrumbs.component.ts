@@ -17,7 +17,6 @@ export class BreadcrumbsComponent implements OnInit {
                 private meta: Meta) { 
         
         this.getDataRouter().subscribe(data => {
-            console.log(data);
             this.titulo = data.titulo;
             this.title.setTitle(this.titulo);
 

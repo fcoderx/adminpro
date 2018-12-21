@@ -28,6 +28,8 @@ import { PipesModule } from '../pipes/pipes.module';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ModelUploadComponent } from '../components/model-upload/model-upload.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         AccountSettingsComponent,
         PromesasComponent,
         RxjsComponent,
-        ProfileComponent
+        ProfileComponent,
+        UsuariosComponent,
+        ModelUploadComponent
     ],
     exports: [
         DashboardComponent,
