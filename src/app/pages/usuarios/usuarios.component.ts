@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../models/usuario.model';
 import { UsuarioService } from 'src/app/services/service.index';
 import { ModelUploadService } from '../../components/model-upload/model-upload.service';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 
 declare var swal: any;
 
@@ -94,7 +94,6 @@ export class UsuariosComponent implements OnInit {
             if (borrar) {
                 this._usuarioService.borrarUsuario(usuario._id)
                     .subscribe(borrado => {
-                        console.log(borrado);
                         this.desde = 0;
                         this.cargarUsuarios();
                         

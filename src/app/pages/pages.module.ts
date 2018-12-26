@@ -24,12 +24,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { PipesModule } from '../pipes/pipes.module';
 
 
-// Temporal
+//
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ModelUploadComponent } from '../components/model-upload/model-upload.component';
+import { HospitalesComponent } from './hospitales/hospitales.component';
+import { MedicosComponent } from './medicos/medicos.component';
+import { MedicoComponent } from './medicos/medico.component';
 
 
 @NgModule({
@@ -45,7 +48,10 @@ import { ModelUploadComponent } from '../components/model-upload/model-upload.co
         RxjsComponent,
         ProfileComponent,
         UsuariosComponent,
-        ModelUploadComponent
+        ModelUploadComponent,
+        HospitalesComponent,
+        MedicosComponent,
+        MedicoComponent
     ],
     exports: [
         DashboardComponent,
