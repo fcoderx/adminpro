@@ -29,6 +29,19 @@ export class HospitalService {
             })
         );
     }
+    
+    // Método para cargar los hospitales, sin paginación, y solo usarse en el componente de médico
+    cargarHospitales2() {
+        const url = URL_SERVICIOS + '/hospital';
+
+        return this.http.get(url).pipe(
+            map((resp: any) => { 
+
+                this.totalHospitales = resp.total;
+                return resp.hospitales;
+            })
+        );
+    }
 
     obtenerHospital(id: string) {
         const url = URL_SERVICIOS + '/hospital/' + id;

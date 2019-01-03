@@ -36,7 +36,7 @@ export class MedicoComponent implements OnInit {
     }
     
     ngOnInit() {
-        this._hospitalService.cargarHospitales().subscribe(
+        this._hospitalService.cargarHospitales2().subscribe(
             hospitales => this.hospitales = hospitales
         );
 
